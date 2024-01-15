@@ -17,6 +17,7 @@
     --secondary-color:#5A5A5D;
     --white-color:#FFF;
     --btn-color:#FF5400;
+    --secondary-font-size:16px;
 }
 
 .grid{
@@ -24,6 +25,12 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 30px;
 }
+
+
+
+
+
+/* Start Heading Section */
 header{
     padding: 0 134px;
     transition: .5s;
@@ -81,12 +88,41 @@ a.active,a:hover{
 #check{
     display: none;
 }
+/* End Heading Section */
 
 
 
 
+/* Start Travel Section */
 
-
+.hero-section{
+    display: grid;
+    grid-column: 2/ span 10;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../images/Group\ 13\ \(1\)\ \(1\).png);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    background-position: center top;
+    position: relative;
+}
+.hero-section h1{
+    font-size: 4.82vw;
+    font-weight: 800;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+.hero-section p{
+    font-size: var(--secondary-font-size);
+    color: var(--white-color);
+    line-height: 26px;
+    padding: 0 10px;
+    margin-bottom: 46px;
+}
 
 
 
@@ -193,3 +229,5 @@ a.active,a:hover{
         transition: .5s;
     }
 }
+
+
