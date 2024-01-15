@@ -82,18 +82,31 @@ a.active,a:hover{
     display: none;
 }
 
-/* @media screen and (min-width:600px) and (max-width:1440px) {
-    label.logo{
-        font-size: 20px;
-        padding-left: 50px;
-    }
-nav ul li a{
-    font-size: 16px;
-}
-header{
-    padding: 0 20px;
-}
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:600px) {
     .checkbtn{
@@ -108,6 +121,7 @@ header{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        margin-top: 50px;
     }
     label.logo{
         font-size: 1.50rem;
@@ -138,7 +152,7 @@ header{
 }
 
 
-@media screen and (min-width:600px) and (max-width:1024px)  {
+@media screen and (min-width:600px) and (max-width:1000px)  {
     .checkbtn{
         display: block;
     }
