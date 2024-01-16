@@ -233,6 +233,13 @@ main{
     margin-top: 0;
 }
 
+.img-one, .img-two, .img-three, .img-four, .img-five, .img-six, .img-seven > img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .grid-wrapper > div{
     display: flex;
     justify-content: center;
@@ -366,7 +373,7 @@ main{
         flex-direction: column;
     }
     .popular-tour-content h3{
-        font-size: 20px;
+        font-size: 30px;
     }
     .popular-tour-content p{
         font-size: var(--mobile-font-size);
@@ -380,6 +387,12 @@ main{
     .grid h3{
         font-size: 20px;
         font-weight: 800;
+    }
+    .grid-wrapper{
+        display: block;
+    }
+    .grid-wrapper > div{
+        padding-top: 25px;
     }
     
 }
@@ -442,7 +455,7 @@ main{
         flex-direction: column;
     }
     .popular-tour-content h3{
-        font-size: 20px;
+        font-size: 30px;
     }
     .popular-tour-content p{
         font-size: var(--mobile-font-size);
@@ -452,6 +465,12 @@ main{
         margin-left: 18px;
         font-size: var(--secondary-font-size);
         color: var(--secondary-color);
+    }
+    .grid-wrapper{
+        display: block;
+    }
+    .grid-wrapper > div{
+        padding-top: 25px;
     }
     
 }
