@@ -18,6 +18,7 @@
     --white-color:#FFF;
     --btn-color:#FF5400;
     --secondary-font-size:16px;
+    --mobile-font-size:14px;
 }
 
 .grid{
@@ -26,7 +27,23 @@
     gap: 30px;
 }
 
+.btn-primary{
+    color: var(--btn-color);
+    font-size: var(--secondary-font-size);
+    color: var(--white-color);
+    background: var(--btn-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 34px;
+    display: inline-block;
 
+}
+.btn-primary:hover{
+    background: #ef5000;
+}
 
 
 
@@ -93,7 +110,7 @@ a.active,a:hover{
 
 
 
-/* Start Travel Section */
+/* Start Hero Section */
 
 .hero-section{
     display: grid;
@@ -103,6 +120,7 @@ a.active,a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
+    border-radius: 16px;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -124,13 +142,66 @@ a.active,a:hover{
     margin-bottom: 46px;
 }
 
+.find-travel{
+    display: inline-block;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.find-travel input, select{
+    font-size: var(--secondary-font-size);
+    padding: 16px;
+    border: none;
+    outline: none;
+    margin-right: 24px;
+}
+::placeholder {
+    color: var(--secondary-color);
+  }
+  /* End Hero Section */
 
 
+main{
+    max-width: 1440px;
+    margin: 60px auto;
+    width: 100%;
+    padding: 0 135px;
+    
+}
 
-
-
-
-
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 100px;
+}
+.popular-tour-content h3{
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.popular-tour-content p{
+    margin-bottom: 24px;
+    font-size: var(--secondary-font-size);
+    color: var(--secondary-color);
+}
+.popular-tour-content > ul{
+    margin-bottom: 24px;
+}
+.popular-tour-content > ul > li{
+    list-style-type: disc;
+    margin-left: 18px;
+    font-size: var(--secondary-font-size);
+    color: var(--secondary-color);
+}
+.popular-tour-img img{
+    width: 100%;
+}
 
 
 
@@ -179,11 +250,41 @@ a.active,a:hover{
     }
     #check:checked ~ ul{
         left: 0;
-        margin-top: 50px;
+        margin-top: 32px;
     }
     header{
         padding: 0 30px;
         transition: .5s;
+    }
+    .find-travel{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 24px; 
+    }
+    .find-travel input, select{
+        margin-right: 0;
+    }
+    main{
+
+        padding: 0 20px;
+    }
+    .popular-tour{
+        flex-direction: column;
+    }
+    .popular-tour-content h3{
+        font-size: 20px;
+    }
+    .popular-tour-content p{
+        font-size: var(--mobile-font-size);
+    }
+    .popular-tour-content > ul{
+        
+    }
+    .popular-tour-content > ul > li{
+        list-style-type: disc;
+        margin-left: 18px;
+        font-size: var(--secondary-font-size);
+        color: var(--secondary-color);
     }
 }
 
@@ -227,6 +328,19 @@ a.active,a:hover{
     header{
         padding: 0 60px;
         transition: .5s;
+    }
+    
+    .find-travel{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 24px;
+        
+    }
+    .find-travel input, select{
+        margin-right: 0;
+    }
+    main{
+        padding: 0 20px;
     }
 }
 
