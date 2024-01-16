@@ -351,6 +351,11 @@ main{
     font-weight: 800;
     margin: 8px auto;
 }
+.topic-1,.topic-2, .topic-3 p{
+    color: var(--secondary-color);
+    font-size: var(--secondary-font-size);
+    padding-bottom: 25px;
+}
 .topic-1{
     grid-column: span 2;
 }
@@ -362,6 +367,31 @@ main{
 }
 
 /*End grid-wrapper-two */
+
+
+
+
+
+/*Start grid-wrapper-three */
+.grid-wrapper-three{
+    display: grid;
+    grid-gap:15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    margin-top: 100px;
+}
+.grid-wrapper-three-content{
+    grid-column: span 2;
+
+}
+.grid-wrapper-three img{
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+}
 
 
 
