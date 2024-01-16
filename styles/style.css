@@ -21,11 +21,7 @@
     --mobile-font-size:14px;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px;
-}
+
 
 .btn-primary{
     color: var(--btn-color);
@@ -184,8 +180,6 @@ main{
     padding: 35px;
 }
 .popular-tour-content h3{
-    display: grid;
-    grid-column: span 6;
     color: var(--primary-color);
     font-size: 40px;
     font-weight: 800;
@@ -215,6 +209,96 @@ main{
 
 
 
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.grid h3{
+    grid-column: span 12;
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.grid p{
+    grid-column: span 12;
+    margin-bottom: 24px;
+    font-size: var(--secondary-font-size);
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.grid-wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+
+
+.img-one{
+    grid-column: span 2;
+    position: relative;
+    color: var(--white-color);
+}
+.img-two{
+    grid-column: span 2;
+    position: relative;
+    color: var(--white-color);
+}
+.img-three{
+    grid-column: span 1;
+    position: relative;
+    color: var(--white-color);
+}
+.img-four{
+    grid-column: span 2;
+    position: relative;
+    color: var(--white-color);
+}
+.img-five{
+    grid-column: span 1;
+    position: relative;
+    color: var(--white-color);
+}
+.img-six{
+    grid-column: span 1;
+    position: relative;
+    color: var(--white-color);
+}
+.img-seven{
+    grid-column: span 3;
+    position: relative;
+    color: var(--white-color);
+}
+.align-text{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
+}
 
 
 
@@ -293,6 +377,11 @@ main{
         font-size: var(--secondary-font-size);
         color: var(--secondary-color);
     }
+    .grid h3{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
 }
 
 
