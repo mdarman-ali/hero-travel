@@ -532,8 +532,10 @@ main{
     .find-travel input, select{
         margin-right: 0;
     }
+    .hero-section h1{
+        font-size: 22px;
+    }
     main{
-
         padding: 0 20px;
     }
     .popular-tour{
