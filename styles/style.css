@@ -140,9 +140,11 @@ main{
 .hero-section p{
     font-size: var(--secondary-font-size);
     color: var(--white-color);
-    line-height: 26px;
+    line-height: 21px;
     padding: 0 10px;
     margin-bottom: 46px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .find-travel{
@@ -181,7 +183,7 @@ main{
 }
 .popular-tour-content{
     width: 100%;
-    padding: 35px;
+    padding-right: 50px;
 }
 .popular-tour-content h3{
     color: var(--primary-color);
@@ -193,6 +195,7 @@ main{
     margin-bottom: 24px;
     font-size: var(--secondary-font-size);
     color: var(--secondary-color);
+    line-height: 24px;
 }
 .popular-tour-content > ul{
     margin-bottom: 24px;
@@ -202,6 +205,7 @@ main{
     margin-left: 18px;
     font-size: var(--secondary-font-size);
     color: var(--secondary-color);
+    line-height: 24px;
 }
 
 .popular-tour-img img{
@@ -248,6 +252,7 @@ main{
     vertical-align: middle;
     display: inline-block;
 }
+
 .grid-wrapper > div{
     display: flex;
     justify-content: center;
@@ -471,6 +476,7 @@ main{
     margin-top: 18px;
 }
 .grid-footer p{
+    font-size: var(--secondary-font-size);
     margin-top: 15px;
     margin-bottom: 33px;
 }
@@ -486,7 +492,7 @@ main{
     .checkbtn{
         display: block;
     }
-    ul{
+    header > nav > ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -534,6 +540,10 @@ main{
     }
     .hero-section h1{
         font-size: 22px;
+        padding-top: 20px;
+    }
+    .hero-section p{
+        font-size: 14px;
     }
     main{
         padding: 0 20px;
@@ -541,21 +551,25 @@ main{
     .popular-tour{
         flex-direction: column;
     }
+    
     .popular-tour-content h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     .popular-tour-content p{
         font-size: var(--mobile-font-size);
+        font-size: 14px;
     }
     .popular-tour-content > ul > li{
         list-style-type: disc;
-        margin-left: 18px;
-        font-size: var(--secondary-font-size);
+        font-size: 14px;
         color: var(--secondary-color);
     }
     .grid h3{
         font-size: 20px;
         font-weight: 800;
+    }
+    .grid p{
+        font-size: 14px;
     }
     .grid-wrapper{
         display: block;
@@ -563,17 +577,41 @@ main{
     .grid-wrapper > div{
         padding-top: 25px;
     }
+    .grid-wrapper-two h3{
+        font-size: 20px;
+    }
+    .topic-1,.topic-2, .topic-3 p{
+        font-size: 14px;
+    }
     .topic-3{
         grid-column: span 2;
     }
+    
     .grid-wrapper-three{
         display: block;
+        margin-bottom: 0;
     }
     .grid-wrapper-three-content{
         margin-bottom: 40px;
     }
+    .grid-wrapper-three-content h3{
+        font-size: 20px;
+    }
+    .grid-wrapper-three-content p{
+        font-size: 14px;
+    }
     .hero-section p{
         font-size: 14px;
+    }
+    .grid-footer{
+        margin-top: 0;
+    }
+    .grid-footer p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .grid-footer img{
+        margin-bottom: 20px;
     }
 }
 
@@ -668,6 +706,7 @@ main{
     .grid-wrapper-three-content{
         margin-bottom: 40px;
     }
+    
 }
 
 
