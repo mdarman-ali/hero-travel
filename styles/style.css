@@ -616,6 +616,10 @@ main{
     .grid-footer img{
         margin-bottom: 20px;
     }
+    .align-text{
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
 
 
@@ -716,6 +720,10 @@ main{
     }
     .grid-footer{
         margin-top: 0;
+    }
+    .align-text{
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 
